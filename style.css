@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+body {
+  font-family: "Trade Winds", system-ui;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* image from https://www.myfreetextures.com/excellent-vintage-and-old-yellow-and-brown-parchment-paper/ */
+  background-image: url('old-yellow-and-brown-parchment-paper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
+  padding: 20px;
+  margin: 0;
+}
