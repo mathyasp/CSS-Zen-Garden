@@ -1,5 +1,7 @@
+/* Import a custom font */
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 
+/* Set the font family, size, line height, and background for the body */
 body {
   font-family: "Trade Winds", system-ui;
   font-size: 1rem;
@@ -14,32 +16,40 @@ body {
   margin: 0;
 }
 
+/* Remove the margin on everything and set box-sizing to border-box */
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Set bottom margin for headings, paragraphs, blockquotes, and lists */
 h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol {
   margin-bottom: 1rem;
 }
 
+/* Style for h1 heading: Set font size to 3rem and center align the text */
 h1 { 
   font-size: 3rem; 
   text-align: center;
 }
 
+/* Style for h2 heading: Set font size to 2.5rem */
 h2 { 
   font-size: 2.5rem; 
 }
 
+/* Style for h3 heading: Set font size to 2rem */
 h3 { 
   font-size: 2rem; 
 }
 
+/* Indent text for paragraphs, blockquotes, and lists */
 p, blockquote, ul, ol {
   text-indent: 2em;
 }
 
+/* Style for blockquotes: Italicize text, add left margin, 
+  set left border color and width, and add left padding */
 blockquote {
   font-style: italic;
   margin-left: 2em;
@@ -47,10 +57,12 @@ blockquote {
   padding-left: 1em;
 }
 
+/* Add padding to lists */
 ul, ol {
   padding-left: 2em;
 }
 
+/* Set bottom margin for list items */
 li {
   margin-bottom: 0.5rem;
 }
