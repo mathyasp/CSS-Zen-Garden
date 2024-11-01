@@ -101,3 +101,40 @@ a:hover {
 .zen-resources a:hover {
   color: #5A3D1A;
 }
+
+/* Style the footer */
+footer {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Style the links in the footer as wax seals */
+footer a {
+  display: inline-block;
+  width: 90px; 
+  height: 90px; 
+  line-height: 90px; 
+  border-radius: 50%;
+  background-image: url('red-wax-seal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 15px; 
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+/* Add spacing between footer and content */
+body {
+  padding-bottom: 60px; 
+}
