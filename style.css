@@ -138,3 +138,13 @@ footer a:hover {
 body {
   padding-bottom: 60px; 
 }
+
+/* Selects the first paragraph in summary */
+.summary > p:nth-child(1) {
+  font-weight: bold;
+}
+
+/* Selects every other a tag that is a child of a list */
+ul > li:nth-child(even) > a {
+  color: #5A3D1A;
+}
