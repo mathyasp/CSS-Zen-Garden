@@ -4,65 +4,77 @@
 /* Set the font family, size, line height, and background for the body */
 body {
   font-family: "Trade Winds", system-ui;
-  font-size: 1rem;
-  line-height: 1.5;
-  /* image from https://www.myfreetextures.com/excellent-vintage-and-old-yellow-and-brown-parchment-paper/ */
+  font-size: 1.25rem; 
+  line-height: 1.75;
   background-image: url('old-yellow-and-brown-parchment-paper.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #000000;
-  padding: 20px;
+  color: #000; 
+  padding: 40px 20%; /* Increased left and right padding */
   margin: 0;
+  max-width: 800px; /* Set a max-width for the body */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Remove the margin on everything and set box-sizing to border-box */
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* Set bottom margin for headings, paragraphs, blockquotes, and lists */
-h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol {
-  margin-bottom: 1rem;
-}
-
-/* Style for h1 heading: Set font size to 3rem and center align the text */
-h1 { 
-  font-size: 3rem; 
+/* Style the main page heading */
+h1 {
+  font-size: 3.5rem; 
   text-align: center;
+  color: #8B4513; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
-/* Style for h2 heading: Set font size to 2.5rem */
-h2 { 
+/* Style the subheading under the main page heading */
+.intro > h2 {
+  font-size: 3rem; 
+  color: #8B4513; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem; 
+}
+
+/* Style the section headings */
+.preamble > h3,
+.explanation > h3,
+.participation > h3,
+.benefits > h3,
+.requirements > h3,
+.design-selection > h3,
+.design-archives > h3,
+.zen-resources > h3 {
   font-size: 2.5rem; 
-}
-
-/* Style for h3 heading: Set font size to 2rem */
-h3 { 
-  font-size: 2rem; 
+  color: #8B4513; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 /* Indent text for paragraphs, blockquotes, and lists */
 p, blockquote, ul, ol {
   text-indent: 2em;
+  font-size: 1.25rem; 
+  margin-bottom: 1.5rem; 
 }
 
-/* Style for blockquotes: Italicize text, add left margin, 
+/* Style for blockquotes: add left margin, 
   set left border color and width, and add left padding */
 blockquote {
-  font-style: italic;
   margin-left: 2em;
   border-left: 4px solid #8B4513;
   padding-left: 1em;
+  font-size: 1.25rem; 
+  margin-bottom: 1.5rem; 
 }
 
 /* Add padding to lists */
 ul, ol {
   padding-left: 2em;
+  margin-bottom: 1.5rem;
 }
 
 /* Set bottom margin for list items */
 li {
   margin-bottom: 0.5rem;
 }
+
