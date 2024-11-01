@@ -87,3 +87,17 @@ a {
 a:hover {
   color: #5A3D1A;
 }
+
+/* Style the links in the lists: Select a Design, Archives, and Resources */
+.design-selection a,
+.design-archives a,
+.zen-resources a {
+  color: #8B4513;
+  text-decoration: underline;
+}
+
+.design-selection a:hover,
+.design-archives a:hover,
+.zen-resources a:hover {
+  color: #5A3D1A;
+}
