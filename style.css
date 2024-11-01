@@ -78,3 +78,12 @@ li {
   margin-bottom: 0.5rem;
 }
 
+/* Style all links in the body */
+a {
+  color: #8B4513;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5A3D1A;
+}
