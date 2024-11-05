@@ -11,11 +11,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #000; 
-  padding: 40px 20%; /* Increased left and right padding */
-  margin: 0;
-  max-width: 800px; /* Set a max-width for the body */
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* Style the main page heading */
@@ -60,16 +56,13 @@ p, blockquote, ul, ol {
 /* Style for blockquotes: add left margin, 
   set left border color and width, and add left padding */
 blockquote {
-  margin-left: 2em;
   border-left: 4px solid #8B4513;
-  padding-left: 1em;
   font-size: 1.25rem; 
   margin-bottom: 1.5rem; 
 }
 
 /* Add padding to lists */
 ul, ol {
-  padding-left: 2em;
   margin-bottom: 1.5rem;
 }
 
@@ -147,4 +140,35 @@ body {
 /* Selects every other a tag that is a child of a list */
 ul > li:nth-child(even) > a {
   color: #5A3D1A;
+}
+
+/* Define the grid container */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'a c'
+    'd c';
+}
+
+/* Place the intro section in the first column, first row */
+.intro {
+  grid-area: a;
+  justify-self: center;
+  padding: 0 5em;
+}
+
+/* Place the main supporting section in the first column, second row */
+.main.supporting {
+  grid-area: d;
+  justify-self: center;
+  padding: 0 5em;
+}
+
+/* Place the sidebar section in the second column, spanning both rows */
+.sidebar {
+  grid-area: c;
+  justify-self: end;
+  padding: 2em;
 }
