@@ -12,35 +12,13 @@ body {
   background-position: center;
   color: #000; 
   margin: 0 auto;
+  min-height: 100%;
 }
 
 /* Style the main page heading */
 h1 {
   font-size: 3.5rem; 
   text-align: center;
-  color: #8B4513; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-}
-
-/* Style the subheading under the main page heading */
-.intro > h2 {
-  font-size: 3rem; 
-  color: #8B4513; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem; 
-}
-
-/* Style the section headings */
-.preamble > h3,
-.explanation > h3,
-.participation > h3,
-.benefits > h3,
-.requirements > h3,
-.design-selection > h3,
-.design-archives > h3,
-.zen-resources > h3 {
-  font-size: 2.5rem; 
   color: #8B4513; 
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
@@ -81,6 +59,62 @@ a:hover {
   color: #5A3D1A;
 }
 
+/* Define the grid container */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    'a a z'
+    'b b z'
+    ;
+}
+
+/* Place the intro section in the first column, first row */
+.intro {
+  grid-area: a;
+  justify-self: center;
+  padding: 0 5em;
+}
+
+.main.supporting {
+  grid-area: b;
+  justify-self: center;
+  padding: 0 5em;
+}
+
+/* Place the sidebar section in the third column, spanning all rows */
+.sidebar {
+  grid-area: z;
+  justify-self: end;
+  padding: 2em 2em 0;
+  border-left: 3px ridge black;
+  min-height: 100vh; 
+}
+
+/* Style the subheading under the main page heading */
+.intro > h2 {
+  font-size: 3rem; 
+  color: #8B4513; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem; 
+}
+
+/* Style the section headings */
+.preamble > h3,
+.explanation > h3,
+.participation > h3,
+.benefits > h3,
+.requirements > h3,
+.design-selection > h3,
+.design-archives > h3,
+.zen-resources > h3 {
+  font-size: 2.5rem; 
+  color: #8B4513; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
 /* Style the links in the lists: Select a Design, Archives, and Resources */
 .design-selection a,
 .design-archives a,
@@ -92,6 +126,16 @@ a:hover {
 .design-selection a:hover,
 .design-archives a:hover,
 .zen-resources a:hover {
+  color: #5A3D1A;
+}
+
+/* Selects the first paragraph in summary */
+.summary > p:nth-child(1) {
+  font-weight: bold;
+}
+
+/* Selects every other a tag that is a child of a list */
+ul > li:nth-child(even) > a {
   color: #5A3D1A;
 }
 
@@ -125,50 +169,4 @@ footer a {
 footer a:hover {
   transform: scale(1.1);
   text-decoration: none;
-}
-
-/* Add spacing between footer and content */
-body {
-  padding-bottom: 60px; 
-}
-
-/* Selects the first paragraph in summary */
-.summary > p:nth-child(1) {
-  font-weight: bold;
-}
-
-/* Selects every other a tag that is a child of a list */
-ul > li:nth-child(even) > a {
-  color: #5A3D1A;
-}
-
-/* Define the grid container */
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: 
-    'a c'
-    'd c';
-}
-
-/* Place the intro section in the first column, first row */
-.intro {
-  grid-area: a;
-  justify-self: center;
-  padding: 0 5em;
-}
-
-/* Place the main supporting section in the first column, second row */
-.main.supporting {
-  grid-area: d;
-  justify-self: center;
-  padding: 0 5em;
-}
-
-/* Place the sidebar section in the second column, spanning both rows */
-.sidebar {
-  grid-area: c;
-  justify-self: end;
-  padding: 2em;
 }
