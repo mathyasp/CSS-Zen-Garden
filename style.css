@@ -170,3 +170,26 @@ footer a:hover {
   transform: scale(1.1);
   text-decoration: none;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .page-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      'a'
+      'b'
+      'z';
+  }
+
+  .intro, .main.supporting, .sidebar {
+    padding: 0 1em;
+  }
+
+  .sidebar {
+    border-left: none;
+    border-top: 3px ridge black;
+    padding: 1em 0 0;
+    width: 100%;
+  }
+}
